@@ -12,4 +12,4 @@ What is OpenBox?
 * Clean, documented, modern code
 * OpenBox is a "three layer cake"
 
-![image](https://user-images.githubusercontent.com/308489/57466286-01ee6f00-7289-11e9-9fbe-ee7a5c8819f0.png)
+![image](https://user-images.githubusercontent.com/12067297/57533408-60c5ee00-7346-11e9-8649-7ec652e360a7.png)
