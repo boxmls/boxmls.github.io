@@ -1,10 +1,9 @@
 Intro:
   - docs/index.md
   - docs/installation.md
-  - title: Mapping data
-  children:
-      - title: "Properties"
-        url: /docs/mapping-data/properties.md
+Mapping Data: 
+  - /docs/mapping-data/properties.md
+MLS:
   - docs/mls-configuration.md
   - docs/mls-setup.md
   - docs/poller.md
