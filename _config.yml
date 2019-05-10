@@ -27,6 +27,10 @@ defaults:
       path: "support"
     values:
       layout: support
+  - scope:
+      path: "thank-you"
+    values:
+      layout: thank-you
 
 branch: master
 theme: jekyll-theme-cayman
