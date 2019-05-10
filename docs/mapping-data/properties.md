@@ -4,3 +4,430 @@ sidebar_title: Properties
 permalink: /docs/mapping-data/properties
 ---
 Properties data mapping
+```
+{{!
+  ## PAAR Master
+  ##
+}}
+{
+  "_pid": "paar-{{LIST_105}}",
+  "_modified": {{#date}}{{LIST_87}}{{/date}},
+  "_guid": "/property/paar-{{LIST_105}}",
+
+  "primary": {
+      "mpoPropType": "{{#formatType}}{{LIST_9}}{{/formatType}}",
+      "mpoPropInfo": [{{#stringToList}}{{LIST_9}}{{/stringToList}}],
+      "mpoStatus": "{{#standardizeStatus}}{{LIST_15}}{{/standardizeStatus}}",
+      "systemStatus": "{{#getSystemStatus}}{{LIST_9}}{{/getSystemStatus}}",
+      "mpoNeighborhood": {{fetchNeighborhood LIST_46 LIST_47}},
+      "isMixedUse": false,
+
+      "isIncomeProperty": {{#isIncomeProperty}}{{LIST_96}}{{/isIncomeProperty}},
+      "occType": "{{LIST_96}}",
+
+      "isForLease": {{#isForLease}}{{/isForLease}},
+
+      "subDistrict": "",
+      "region": "",
+      "directions": "{{LIST_82}}",
+      "loftUse": "",
+      "parcelNum": "{{LIST_80}}",
+      "address": {
+        "mpoAddress": "{{LIST_31}} {{LIST_33}} {{LIST_34}} {{LIST_37}}, {{LIST_39}}, {{LIST_40}} {{LIST_43}}",
+        "streetSuffix": "{{LIST_37}}",
+        "streetNum": "{{LIST_31}} ",
+        "streetName": "{{LIST_34}}",
+        "streetNumModifier": "",
+        "city": "{{LIST_39}}",
+        "state": "{{LIST_40}}",
+        "unitNum": "{{LIST_35}}",
+        "county": "{{LIST_41}}",
+        "zipCode": "{{LIST_43}}",
+        "zipCodeLong": "",
+        "crossStreet": "",
+        "streetDirection": "{{LIST_33}}",
+        "floorNum": null
+      },
+      "price": {
+          "priceReduction": {{{isPriceReduction LIST_22 LIST_21}}},
+          "searchPrice": {{#number}}{{LIST_22}}{{/number}},
+          "listingPrice": {{#number}}{{LIST_22}}{{/number}},
+          "origPrice": {{#number}}{{LIST_21}}{{/number}},
+          "priceChangeDate": {{#date}}{{LIST_16}}{{/date}}
+      },
+      "interior": {
+          "bath": {{#number}}{{LIST_67}}{{/number}},
+          "bed": {{#number}}{{LIST_66}}{{/number}},
+          "possibleBed": null,
+          "qtrBath": null,
+          "bathIncludes": [],
+          "threeQtrBath": {{#number}}{{LIST_70}}{{/number}},
+          "diningRoom": [],
+          "estDiningRoomSize": "",
+          "estFamiliyRoomSize": "",
+          "estKitchenSize": "",
+          "estLivingRoomSize": "",
+          "estMasterBedSize": "",
+          "familyRoom": [],
+          "fireplace": [],
+          "kitchen": [],
+          "lowerLevel": [],
+          "laundryAppliances": [],
+          "livingRoom": [],
+          "mainLevel": [],
+          "totalNumberRooms": null,
+          "otherRooms": [{{#stringToList}}{{GF20130620145906784471000000}}{{/stringToList}}],
+          "floors": [{{#stringToList}}{{GF20130515013225786838000000}},{{GF20130515013231615793000000}},{{GF20130710005848242469000000}}{{/stringToList}}],
+          "upperLevel": [],
+          "specialFeatures": [ {{#stringToList}}{{GF20130515013225991328000000}},{{GF20130523021253107641000000}},{{GF20130515013229341798000000}}{{/stringToList}} ],
+          "views": [ {{#stringToList}}{{GF20130515013225704137000000}},{{GF20130515013235409061000000}},{{GF20130710005915638062000000}},{{GF20130515221654762411000000}}{{/stringToList}} ],
+          "sqFt": {{#number}}{{LIST_48}}{{/number}},
+          "sqFtSource": [{{#stringToList}}{{LIST_90}}{{/stringToList}}],
+          "listingPricePerSquareFoot": {{#getPricePerSqFt}}{{LIST_22}},{{LIST_48}}{{/getPricePerSqFt}},
+          "sellingPricePerSquareFoot": {{#getPricePerSqFt}}{{LIST_23}},{{LIST_48}}{{/getPricePerSqFt}}
+      },
+
+      "hoa": {
+          "hoaExists": {{#bool}}{{LIST_88}}{{/bool}},
+          "hoaDues": {{#number}}{{LIST_117}}{{/number}},
+          "hoaFeeIncludes": [],
+          "hoaName": "{{FEAT20171012183357279692000000}}",
+          "hoaPhoneNum": "{{#getSingleValue}}{{getPhone LIST_143}},{{getPhone FEAT20171012183436584734000000}}{{/getSingleValue}}",
+          "unconfirmedCoopFee": null,
+          "hoaFeePaid": "{{FEAT20171012183544071806000000}}",
+          "commonAreas": [{{#stringToList}}{{GF20130620150104948197000000}}{{/stringToList}}],
+          "exclusiveUseAreas": [],
+          "hoursLimited": null,
+          "hours": "",
+          "licenseRequired": null,
+          "restrictions": [],
+          "specialDocs": [{{#stringToList}}{{FEAT20171012183632233649000000}}{{/stringToList}}],
+          "ticAgreement": null
+      }
+
+  },
+
+  "geo": {
+      "lat": {{#if LIST_46 }}{{#number}}{{LIST_46}}{{/number}}{{else}}0{{/if}},
+      "lon": {{#if LIST_47 }}{{#number}}{{LIST_47}}{{/number}}{{else}}0{{/if}}
+  },
+
+  "building": {
+      "mpoBuilding": {{fetchBuilding LIST_46 LIST_47}},
+      "numBuildings": {{#number}}{{LIST_65}}{{/number}},
+      "numUnitsOccupOwner": null,
+      "totalUnits": {{#number}}{{LIST_68}}{{/number}},
+      "numVacantUnits": null,
+      "numOneBedUnits": null,
+      "numTwoBedUnits": null,
+      "numThreeBedUnits": null,
+      "numFurnishedUnits": null,
+      "numCommercialUnits": null,
+      "numRooms": null,
+      "numStudioUnits": null,
+      "otherUnits": "",
+      "percentOffice": null,
+      "buildingName": "",
+      "numStories": {{#numberInt}}{{LIST_64}}{{/numberInt}},
+      "structure": [{{#stringToList}}{{GF20130620010741491441000000}}{{/stringToList}}]
+  },
+
+  "utilities": {
+      "energyConservation": [],
+      "headingAndCooling": [{{#stringToList}}{{GF20130515013225177357000000}},{{GF20130515013225246889000000}},{{GF20130515013231657532000000}},{{GF20130620145807985158000000}}{{/stringToList}}],
+      "waterAndSewer": [{{#stringToList}}{{GF20130515013232460446000000}}{{/stringToList}}],
+      "seperateMeteres": [],
+      "utilites": [{{#stringToList}}{{GF20130515013232402338000000}},{{GF20130515013225309256000000}}{{/stringToList}}]
+  },
+
+  "parking": {
+      "leaseParkingFee": null,
+      "numParkingSpaces": {{#number}}{{LIST_52}}{{/number}},
+      "parkingAccess": "",
+      "parking": [{{#stringToList}}{{GF20130708184121449747000000}},{{GF20130708221211462803000000}},{{GF20130708221231884187000000}},{{GF20130708221312911314000000}}{{/stringToList}}],
+      "parkingType": "{{GF20130515013233404755000000}}",
+      "monthlyParkingFees": null,
+      "monthlyRent": null,
+      "parkingFeatures": [],
+      "numIndependentParking": null,
+      "numTandemParking": null,
+      "commercialParkingTypes": []
+  },
+
+  "construction": {
+      "homeEnergyRating": null,
+      "greenPointRating": null,
+      "builderArchitect": "{{LIST_101}}",
+      "foundation": "{{GF20130515013229706395000000}}{{GF20130523021248448976000000}}",
+      "zoning": "{{LIST_74}}",
+      "yearBuilt": {{#number}}{{LIST_53}}{{/number}},
+      "exterior": [{{#stringToList}}{{GF20130523021243863301000000}},{{GF20130515013224882066000000}}{{/stringToList}}],
+      "remodledGreenCert": "",
+      "roof": "{{GF20130515013225082800000000}}{{GF20130515013232039302000000}}{{GF20130710005900070229000000}}",
+      "style": [{{#stringToList}}{{GF20130515013224750965000000}},{{GF20130523021259058479000000}}{{/stringToList}}]
+  },
+
+  "lot": {
+      "lotMeasurement": "",
+      "lotSqFt": {{#number}}{{LIST_56}}{{/number}},
+      "pricePerAcre": null,
+      "conditionsRestrict": [],
+      "cornersMarked": null,
+      "crops": [],
+      "demolitionReport": null,
+      "developmentStatus": [],
+      "existingStructures":[],
+      "fencing": [],
+      "improvements": [],
+      "lotDimensionsRear": "",
+      "lotAreaIncludes": [],
+      "lotDimensionsFront": "",
+      "lotDimensionsLeft": "",
+      "lotDimensionsRight": "",
+      "mineralRights": null,
+      "otherLotDimensionOne": "",
+      "otherLotDimensionTwo": "",
+      "soil": "",
+      "soilReport": null,
+      "surfaceWater": [],
+      "surveyed": null,
+      "zoningType": [{{#stringToList}}{{LIST_74}}{{/stringToList}}],
+      "numLots": "",
+      "apprxLotDimensions": "",
+      "lotDescription": [{{#stringToList}}{{LIST_97}},{{GF20130515221654762411000000}}{{/stringToList}}],
+      "drivewayAndSideWalks": [{{#stringToList}}{{GF20130620145836566493000000}}{{/stringToList}}],
+      "otherStructures": [{{#stringToList}}{{GF20130515013224191112000000}},{{GFLU20130515013231571676000000}},{{GF20130523021243863301000000}}{{/stringToList}}],
+      "pool": []
+  },
+
+  "description": {
+      "agentOnlyRemarks": "{{#sanitize}}{{LIST_79}}{{/sanitize}}",
+      "marketingRemarks": "{{#sanitize}}{{LIST_78}}{{/sanitize}}",
+      "phoneToShowing": "",
+      "phoneToShowAreaCode": "",
+      "PhoneToShowNumber": "",
+      "numImages": {{#number}}{{LIST_133}}{{/number}},
+      "imagesModifiedDate": {{#date}}{{LIST_134}}{{/date}},
+      "documentsDisclosure": [],
+      "homeProtectionPlan": null,
+      "miscellaneous": [],
+      "possession": [{{#stringToList}}{{GF20130731185007078520000000}},{{GF20130731185036214318000000}},{{GF20130731185139440931000000}},{{GF20130731193220831614000000}}{{/stringToList}}],
+      "showingInstructions": [{{#stringToList}}{{GF20130620145930261677000000}},{{GF20130515013233885580000000}},{{GF20130703134231815594000000}},{{GF20130710005905038159000000}}{{/stringToList}}],
+      "virtualMedia": null,
+      "virtualTourURL": "{{BRANDEDVIRTUALTOUR}} {{UNBRANDEDIDXVIRTUALTOUR}}",
+      "location": []
+  },
+
+  "nearby": {
+      "transportation": [],
+      "shopping": [],
+      "recreation": [],
+      "dailyTraffic": "",
+      "school": "need augmented data"
+  },
+
+  "mls": {
+      "name": "paar",
+      "mlsId": "{{LIST_1}}",
+      "association": "",
+      "availableDate": null,
+      "commissionComments": "",
+      "commissionToSellingOffice": "",
+      "contingentDate": {{#date}}{{LIST_13}}{{/date}},
+      "contingentExpDate": null,
+      "entryDate": {{#date}}{{LIST_132}}{{/date}},
+      "estSellingDate": null,
+      "financing": [{{#stringToList}}{{LIST_28}},{{GF20130620145853576461000000}}{{/stringToList}}],
+      "financingComments": "",
+      "inactiveDate": null,
+      "modified": {{#date}}{{LIST_87}}{{/date}},
+      "listingDate":{{#date}}{{LIST_10}}{{/date}},
+      "mlsNumber": "{{LIST_105}}",
+      "onMarket": null,
+      "onMarketDate": {{#date}}{{LIST_10}}{{/date}},
+      "pendingDate": {{#date}}{{LIST_13}}{{/date}},
+      "knownShortSale": {{#bool}}{{LIST_93}}{{/bool}},
+      "pendingLitigation": null,
+      "probateSale": null,
+      "reo": {{#bool}}{{LIST_93}}{{/bool}},
+      "courtConfirmation": null,
+      "scopeOfService": [{{#stringToList}}{{LIST_107}}{{/stringToList}}],
+      "status": "{{LIST_15}}",
+      "statusComments": "",
+      "statusDate": {{#date}}{{LIST_16}}{{/date}},
+      "statusDateTime": {{fetchStatusDateTime LIST_15 LIST_16}},
+      "variableRateCommission": {{#bool}}{{LIST_60}}{{/bool}},
+      "zeroSellingPrice": null,
+      "knownBmr": null,
+      "exchangeFor": [],
+
+      "permissions": {
+        "idx": {{#bool}}{{LIST_104}}{{/bool}},
+        "allowAddressPublic": {{#bool}}{{LIST_104}}{{/bool}},
+        "allowAddressVow": {{#bool}}{{VOWAddr}}{{/bool}},
+        "allowVowAvm": {{#bool}}{{VOWAVM}}{{/bool}},
+        "allowVowBlog": {{#bool}}{{VOWComm}}{{/bool}},
+        "publishToVow": {{#bool}}{{VOWList}}{{/bool}},
+        "brokerageOnly": false
+      },
+
+      "soldInformation": {
+        "financingTerms": [{{#stringToList}}{{LFD_TERMS_32}}{{/stringToList}}],
+        "sellingComments": "",
+        "sellingPrice": {{#numberInt}}{{LIST_23}}{{/numberInt}},
+        "sellingDate": {{#date}}{{LIST_12}}{{/date}},
+        "spLp": {{getSpLp LIST_23 LIST_22}}
+      },
+
+      "reciprocalMember": {
+        "reciprocalMemberAreaCode": "",
+        "reciprocalMemberName": "",
+        "reciprocalMemberPhone": ""
+      },
+
+      "nonMemberSalesAgentName": "",
+      "nonMemberSalesOfficeName": ""
+
+  },
+
+  "incomeProperty": {
+      "numUnits": {{#number}}{{LIST_68}}{{/number}},
+      "leaseType": "",
+      "occName": "",
+      "monthlyRent": "{{LIST_22}}",
+      "occPhone": "",
+      "rentType": "",
+      "rentSource": "",
+      "subLease": "",
+      "subLeaseExpiry": null,
+      "leaseTermComments": "",
+      "leaseTerm": "{{GF20130620145853576461000000}}{{GF20130522205555540983000000}}{{GF20130515013232226914000000}}",
+      "leaseExpiry": {{#date}}{{LIST_127}}{{/date}},
+      "writtenLeaseAvail": "",
+      "actualOrScheduled": "",
+      "estTotalExpenses": "{{LIST_127}}",
+      "grossAnnualIncome": "{{LIST_121}}",
+      "incExpSource": "",
+      "operatingExpenses": "",
+      "tenantPays": "",
+      "existingRentalTerm": "",
+      "capRate": "",
+      "estGrossIncome": "",
+      "oneBedRentRange": "",
+      "twoBedRentRange": "",
+      "threeBedRentRange": "",
+      "commRentRange": "",
+      "studioRentRange": "",
+      "estTotalAnnExp": "",
+      "estMiscExp": "",
+      "estManagementExp": "",
+      "estNetIncome": "",
+      "estTaxesExp": "",
+      "estUtilitiesExp": "",
+      "expensesInclude": "",
+      "grsSchedIncIncl": "",
+      "majorTenantName": "",
+      "majorTenantPhone": "",
+      "majorTenantSqFt": "",
+      "PropMgrLastName":  "",
+      "propManagerPhone": "",
+      "srcOfFinancialInfo": "",
+      "typesOfLease": "",
+      "vacancyFactor": "",
+      "units": [
+        {
+          "numRooms": "",
+          "occupancy": "{{LIST_96}}",
+          "occLastName": "",
+          "occPhone": "",
+          "rentCost": "",
+          "unitOne": "",
+          "approxSqFt": "{{FEAT20130703134232881469000000}}",
+          "identification": "",
+          "includes": "{{FEAT20130703134233114211000000}}"
+        },
+        {
+          "numRooms": "",
+          "occupancy": "",
+          "occLastName": "",
+          "occPhone": "",
+          "rentCost": "",
+          "unitTwo": "",
+          "approxSqFt": "{{FEAT20130703134234529903000000}}",
+          "includes": "{{FEAT20130703134234788835000000}}"
+        },
+        {
+          "numRooms": "",
+          "occupancy": "",
+          "occLastName": "",
+          "occPhone": "",
+          "rentCost": "",
+          "unitThree": "",
+          "approxSqFt": "{{FEAT20130703134235212589000000}}",
+          "identification": "",
+          "includes": "{{FEAT20130703134235427666000000}}"
+        },
+        {
+          "numRooms": "",
+          "occupancy": "",
+          "occLastName": "",
+          "occPhone": "",
+          "rentCost": "",
+          "unitFour": "",
+          "approxSqFt": "{{FEAT20130708222844502736000000}}",
+          "identification": "",
+          "includes": "{{FEAT20130708222243983718000000}}"
+        }
+      ]
+  },
+
+
+  "metrics": {
+    "days_until_offer": {{getDays LIST_10 LIST_13 }},
+    "days_until_pending": {{getDays LIST_10 LIST_13 }},
+    "days_until_sold": {{getDays LIST_10 LIST_12 }}
+  },
+
+  "areas": {{fetchAreas LIST_46 LIST_47 }},
+
+  "images": {{fetchImages "property" false "images"}},
+
+  "agents": {
+
+    "listingAgents": [
+      {{fetchAgent "listingPrimary"   "paar" listing_member_shortid "specifics.memberNum" }},
+      {{fetchAgent "listingSecondary"  "paar" colisting_member_shortid "specifics.memberNum" }}
+    ],
+
+    "sellingAgents": [
+      {{fetchAgent "sellingPrimary"     "paar" selling_member_shortid "specifics.memberNum" }},
+      {{fetchAgent "sellingSecondary"   "paar" coselling_member_shortid "specifics.memberNum" }}
+    ]
+
+  },
+
+  "offices": {
+
+    "listingOffices": [
+      {{fetchOffice "listingPrimary"    "paar" listing_office_shortid "officeNumber" }},
+      {{fetchOffice "listingSecondary"  "paar" colisting_office_shortid "officeNumber" }}
+    ],
+
+    "sellingOffices": [
+      {{fetchOffice "sellingPrimary"    "paar" selling_office_shortid "officeNumber" }},
+      {{fetchOffice "sellingSecondary"  "paar" coselling_office_shortid "officeNumber" }}
+    ]
+
+  },
+
+  "events": {
+    "openHomes" : {{fetchOpenHomes "paar" LIST_15 LIST_1 LIST_105}},
+    "tour": null
+  },
+
+  "_suggestPriority": {{fetchSuggestPriority LIST_15}},
+
+  "_areasVersion": 3
+
+}
+```
