@@ -4,7 +4,7 @@ Intro:
   - title: Mapping data
   children:
       - title: "Properties"
-        url: /docs/mapping-data/properties
+        url: /docs/mapping-data/properties.md
   - docs/mls-configuration.md
   - docs/mls-setup.md
   - docs/poller.md
