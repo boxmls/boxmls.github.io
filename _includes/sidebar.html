@@ -1,0 +1,46 @@
+<aside class="sidebar col-md-3">
+
+  {% for doc in site.data.docs %}
+  <h2>{{ doc[0] }}</h2>
+
+  <ul>
+    {% for item in doc[1] %}
+    <li>
+      {% if item.url %}
+        {% assign link = item %}
+      {% else %}
+        {% for doc in site.pages %}
+          {% if doc.path == item %}
+            {% assign link = doc %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if page.url == link.url %}
+        {% assign classes = "active" %}
+      {% else %}
+        {% assign classes = "" %}
+      {% endif %}
+
+      <a class="{{classes}}" href="{{ link.url }}">{{ link.sidebar_title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  <script>
+    (function() {
+      var cx = '008185832867387337881:a1_xnj8hcv0';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+
+
+</aside>

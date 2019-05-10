@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javscript" src="/assets/scripts/jquery.min.js" ></script>
+  <script type="text/javscript" src="/assets/scripts/app.js" ></script>
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <title>{{ page.title }}</title>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','{{ site.google_tag }}');</script>
+</head>
+<body class="{{ page.page_class_name }}">
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag }}" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+{% include header.html %}
+
+{{ content }}
+
+{% include footer.html %}
+</body>
+</html>

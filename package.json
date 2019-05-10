@@ -1,0 +1,29 @@
+{
+  "name": "BoxMLS",
+  "version": "1.0.0",
+  "description": " +description: ",
+  "author": "UDX <denys@udx.io> (https://boxmls.github.io)",
+  "license": "ISC",
+  "repository": "https://github.com/boxmls/boxmls.github.io",
+  "scripts": {
+    "start": "probot run ./index.js",
+    "test": "jest && standard"
+  },
+  "dependencies": {
+    "primer-css": "^8.0.0",
+    "probot": "^6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "smee-client": "^1.0.1",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}

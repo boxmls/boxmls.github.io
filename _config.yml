@@ -1,0 +1,31 @@
+title: BoxMLS
+description:
+logo_image: https://storage.googleapis.com/media.usabilitydynamics.com/2014/11/0a6151b2-wpcrm-plugin-icon-300x300.png
+wp_link: https://github.com/boxmls/boxmls.github.io
+google_tag: GTM-MHFSZQK
+
+exclude:
+  - node_modules
+  - package.json
+  - .idea
+  - workspace.xml
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+  load_paths:
+    - node_modules
+    - node_modules/**/*/node_modules
+
+defaults:
+  - scope:
+      path: "docs"
+    values:
+      layout: docs
+  - scope:
+      path: "support"
+    values:
+      layout: support
+
+branch: master
+theme: jekyll-theme-cayman
