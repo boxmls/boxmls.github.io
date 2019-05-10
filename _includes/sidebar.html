@@ -1,5 +1,9 @@
 <aside class="sidebar col-md-3">
 
+  <div class="logo-box">
+    <img src="{{ site.logo_image }}" alt="{{ site.title }}"/>
+  </div>
+
   {% for doc in site.data.docs %}
   <h2>{{ doc[0] }}</h2>
 
@@ -28,19 +32,6 @@
     {% endfor %}
   </ul>
   {% endfor %}
-
-  <script>
-    (function() {
-      var cx = '008185832867387337881:a1_xnj8hcv0';
-      var gcse = document.createElement('script');
-      gcse.type = 'text/javascript';
-      gcse.async = true;
-      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(gcse, s);
-    })();
-  </script>
-  <gcse:search></gcse:search>
 
 
 </aside>
