@@ -8,7 +8,78 @@ layout: default
       <div class="col-md-12">
         <div class="content-body">
           <h1 class="page-title">{{ page.title }}</h1>
-          {{ content }}
+          
+          <div class="row">
+            <div class="col-md-3">
+              <p>415-997-9964</p>
+
+              <p><a href="mailto:hello@boxmls.com">hello@boxmls.com</a></p>
+              <p>
+                1400 Castro Street
+                San Francisco, CA 94114
+              </p>
+            </div>
+            <div class="col-md-8 offset-md-1">
+              <form name="" method="post" action="https://boxmls.github.io/boxmls@udx.io">
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="first_name">First Name <span class="required">*</span></label>
+                          <input id="first_name" class="form-control" type="text" name="first_name" value=""
+                                 placeholder="First Name"/>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="last_name">Last Name</label>
+                          <input id="last_name" class="form-control" type="text" name="last_name" value=""
+                                 placeholder="Last Name"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="replyto">Email Address <span class="required">*</span></label>
+                      <input id="replyto" class="form-control" type="email" name="_replyto" value=""
+                             placeholder="Email Address"/>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input id="phone" class="form-control" type="tel" name="phone" value=""
+                             placeholder="(###)###-####"/>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="select-field">Select one:</label>
+                      <select id="select-field" class="form-control" name="select_field">
+                        <option value="I am an agent">I am an agent</option>
+                        <option value="I represent a brokerage">I represent a brokerage</option>
+                        <option value="I represent an MLS">I represent an MLS</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="mls_association">MLS/Association</label>
+                      <input id="mls_association" class="form-control" type="text" name="mls_association" value=""
+                             placeholder="MLS/Association"/>
+                    </div>
+                    <div class="form-group">
+                      <input class="btn btn-primary" type="submit" value="Send">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
