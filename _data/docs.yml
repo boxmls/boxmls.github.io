@@ -1,6 +1,7 @@
 Intro:
   - docs/index.md
   - docs/installation.md
+  - docs/mapping-data.md  
   - docs/mls-configuration.md
   - docs/mls-setup.md
   - docs/poller.md
