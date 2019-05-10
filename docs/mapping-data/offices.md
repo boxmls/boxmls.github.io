@@ -7,7 +7,6 @@ Offices data mapping
 ```
 {
   "_modified": {{#date}}{{TIMESTAMP}}{{/date}},
-
   "officeName": "{{OFFICE_2}}",
   "officeMLSID": "{{OFFICE_0}}",
   "officeNumber": "{{OFFICE_15}}",
@@ -22,7 +21,6 @@ Offices data mapping
   "branchType": "",
   "branchNum": "",
   "boardID": "{{OFFICE_16}}",
-
   "contact": {
     "primaryPhone": {{#if OFFICE_18 }}"{{getPhone OFFICE_18}}"{{else}}null{{/if}},
     "primaryPhoneExt": "",
@@ -31,7 +29,6 @@ Offices data mapping
     "email": "{{OFFICE_8}}",
     "website": "{{OFFICE_9}}"
   },
-
   "address": {
     "careOf": "",
     "fullStreetAddress": "",
@@ -42,7 +39,6 @@ Offices data mapping
     "zip": "",
     "zip4": ""
   },
-
   "mailingAddress": {
     "careOf": "",
     "fullStreetAddress": "",
@@ -53,7 +49,6 @@ Offices data mapping
     "zip": "",
     "zip4": ""
   },
-
   "brokerInfo": {
     "brokerLicenseNum": "",
     "brokerAgentId": "{{BROKERID}}",
@@ -64,6 +59,5 @@ Offices data mapping
     "franchiseNrds": "",
     "numBranches": ""
   }
-
 }
 ```

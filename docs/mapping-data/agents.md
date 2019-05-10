@@ -11,7 +11,6 @@ Agents data mapping
   "_recipMLS": "",
   "_subdomain": "{{fetchSubdomain LICENSE MEMBER_2 MEMBER_17}}",
   "_suggestPriority": {{fetchSuggestPriority LICENSE MEMBER_2 MEMBER_17}},
-
   "mls" :{
     "isActive": {{#bool}}{{STATUS}}{{/bool}},
     "id": "{{#lowercase}}{{MEMBER_17}}{{/lowercase}}",
@@ -21,21 +20,18 @@ Agents data mapping
     "transferDate": null,
     "realtorBoard": "{{MEMBER_20}}"
   },
-
   "office": {
     "id": {{#if MEMBER_1}}"paar-{{MEMBER_1}}"{{else}}null{{/if}},
     "number": "{{OFFICESHORT}}",
     "mlsId": "{{MEMBER_1}}",
     "name": ""
   },
-
   "name": {
     "first": "{{MEMBER_3}}",
     "middle": "{{MEMBER_18}}",
     "last": "{{MEMBER_4}}",
     "full": "{{MEMBER_19}}"
   },
-
   "specifics": {
     "designation": "",
     "memberNum": "{{MEMBER_17}}",
@@ -54,7 +50,6 @@ Agents data mapping
     "agentStatusDate": null,
     "lastModifiedDate": {{#date}}{{TIMESTAMP}}{{/date}}
   },
-
   "contact":{
     "email": {{#if MEMBER_10}}"{{MEMBER_10}}"{{else}}null{{/if}},
     "website": {{#if MEMBER_11}}"{{MEMBER_11}}"{{else}}null{{/if}},
@@ -76,7 +71,6 @@ Agents data mapping
       {{/if}}
     ]
   },
-
   "address": {
     "fullStreetAddress": "{{MEMBER_12}}",
     "addressStreet": "",
@@ -84,7 +78,6 @@ Agents data mapping
     "state": "{{MEMBER_15}}",
     "zip": "{{MEMBER_16}}"
   },
-
   "mailingAddress": {
     "fullStreetAddress": "",
     "addressStreet": "",
@@ -93,8 +86,6 @@ Agents data mapping
     "state": "",
     "zip": ""
   },
-
   "images": {{fetchImages "agent" true "images"}}
-
 }
 ```

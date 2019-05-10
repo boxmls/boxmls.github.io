@@ -13,7 +13,6 @@ Properties data mapping
   "_pid": "paar-{{LIST_105}}",
   "_modified": {{#date}}{{LIST_87}}{{/date}},
   "_guid": "/property/paar-{{LIST_105}}",
-
   "primary": {
       "mpoPropType": "{{#formatType}}{{LIST_9}}{{/formatType}}",
       "mpoPropInfo": [{{#stringToList}}{{LIST_9}}{{/stringToList}}],
@@ -21,12 +20,9 @@ Properties data mapping
       "systemStatus": "{{#getSystemStatus}}{{LIST_9}}{{/getSystemStatus}}",
       "mpoNeighborhood": {{fetchNeighborhood LIST_46 LIST_47}},
       "isMixedUse": false,
-
       "isIncomeProperty": {{#isIncomeProperty}}{{LIST_96}}{{/isIncomeProperty}},
       "occType": "{{LIST_96}}",
-
       "isForLease": {{#isForLease}}{{/isForLease}},
-
       "subDistrict": "",
       "region": "",
       "directions": "{{LIST_82}}",
@@ -86,7 +82,6 @@ Properties data mapping
           "listingPricePerSquareFoot": {{#getPricePerSqFt}}{{LIST_22}},{{LIST_48}}{{/getPricePerSqFt}},
           "sellingPricePerSquareFoot": {{#getPricePerSqFt}}{{LIST_23}},{{LIST_48}}{{/getPricePerSqFt}}
       },
-
       "hoa": {
           "hoaExists": {{#bool}}{{LIST_88}}{{/bool}},
           "hoaDues": {{#number}}{{LIST_117}}{{/number}},
@@ -104,14 +99,11 @@ Properties data mapping
           "specialDocs": [{{#stringToList}}{{FEAT20171012183632233649000000}}{{/stringToList}}],
           "ticAgreement": null
       }
-
   },
-
   "geo": {
       "lat": {{#if LIST_46 }}{{#number}}{{LIST_46}}{{/number}}{{else}}0{{/if}},
       "lon": {{#if LIST_47 }}{{#number}}{{LIST_47}}{{/number}}{{else}}0{{/if}}
   },
-
   "building": {
       "mpoBuilding": {{fetchBuilding LIST_46 LIST_47}},
       "numBuildings": {{#number}}{{LIST_65}}{{/number}},
@@ -131,7 +123,6 @@ Properties data mapping
       "numStories": {{#numberInt}}{{LIST_64}}{{/numberInt}},
       "structure": [{{#stringToList}}{{GF20130620010741491441000000}}{{/stringToList}}]
   },
-
   "utilities": {
       "energyConservation": [],
       "headingAndCooling": [{{#stringToList}}{{GF20130515013225177357000000}},{{GF20130515013225246889000000}},{{GF20130515013231657532000000}},{{GF20130620145807985158000000}}{{/stringToList}}],
@@ -139,7 +130,6 @@ Properties data mapping
       "seperateMeteres": [],
       "utilites": [{{#stringToList}}{{GF20130515013232402338000000}},{{GF20130515013225309256000000}}{{/stringToList}}]
   },
-
   "parking": {
       "leaseParkingFee": null,
       "numParkingSpaces": {{#number}}{{LIST_52}}{{/number}},
@@ -153,7 +143,6 @@ Properties data mapping
       "numTandemParking": null,
       "commercialParkingTypes": []
   },
-
   "construction": {
       "homeEnergyRating": null,
       "greenPointRating": null,
@@ -166,7 +155,6 @@ Properties data mapping
       "roof": "{{GF20130515013225082800000000}}{{GF20130515013232039302000000}}{{GF20130710005900070229000000}}",
       "style": [{{#stringToList}}{{GF20130515013224750965000000}},{{GF20130523021259058479000000}}{{/stringToList}}]
   },
-
   "lot": {
       "lotMeasurement": "",
       "lotSqFt": {{#number}}{{LIST_56}}{{/number}},
@@ -199,7 +187,6 @@ Properties data mapping
       "otherStructures": [{{#stringToList}}{{GF20130515013224191112000000}},{{GFLU20130515013231571676000000}},{{GF20130523021243863301000000}}{{/stringToList}}],
       "pool": []
   },
-
   "description": {
       "agentOnlyRemarks": "{{#sanitize}}{{LIST_79}}{{/sanitize}}",
       "marketingRemarks": "{{#sanitize}}{{LIST_78}}{{/sanitize}}",
@@ -217,7 +204,6 @@ Properties data mapping
       "virtualTourURL": "{{BRANDEDVIRTUALTOUR}} {{UNBRANDEDIDXVIRTUALTOUR}}",
       "location": []
   },
-
   "nearby": {
       "transportation": [],
       "shopping": [],
@@ -225,7 +211,6 @@ Properties data mapping
       "dailyTraffic": "",
       "school": "need augmented data"
   },
-
   "mls": {
       "name": "paar",
       "mlsId": "{{LIST_1}}",
@@ -260,7 +245,6 @@ Properties data mapping
       "zeroSellingPrice": null,
       "knownBmr": null,
       "exchangeFor": [],
-
       "permissions": {
         "idx": {{#bool}}{{LIST_104}}{{/bool}},
         "allowAddressPublic": {{#bool}}{{LIST_104}}{{/bool}},
@@ -270,7 +254,6 @@ Properties data mapping
         "publishToVow": {{#bool}}{{VOWList}}{{/bool}},
         "brokerageOnly": false
       },
-
       "soldInformation": {
         "financingTerms": [{{#stringToList}}{{LFD_TERMS_32}}{{/stringToList}}],
         "sellingComments": "",
@@ -278,18 +261,14 @@ Properties data mapping
         "sellingDate": {{#date}}{{LIST_12}}{{/date}},
         "spLp": {{getSpLp LIST_23 LIST_22}}
       },
-
       "reciprocalMember": {
         "reciprocalMemberAreaCode": "",
         "reciprocalMemberName": "",
         "reciprocalMemberPhone": ""
       },
-
       "nonMemberSalesAgentName": "",
       "nonMemberSalesOfficeName": ""
-
   },
-
   "incomeProperty": {
       "numUnits": {{#number}}{{LIST_68}}{{/number}},
       "leaseType": "",
@@ -380,54 +359,38 @@ Properties data mapping
         }
       ]
   },
-
-
   "metrics": {
     "days_until_offer": {{getDays LIST_10 LIST_13 }},
     "days_until_pending": {{getDays LIST_10 LIST_13 }},
     "days_until_sold": {{getDays LIST_10 LIST_12 }}
   },
-
   "areas": {{fetchAreas LIST_46 LIST_47 }},
-
   "images": {{fetchImages "property" false "images"}},
-
   "agents": {
-
     "listingAgents": [
       {{fetchAgent "listingPrimary"   "paar" listing_member_shortid "specifics.memberNum" }},
       {{fetchAgent "listingSecondary"  "paar" colisting_member_shortid "specifics.memberNum" }}
     ],
-
     "sellingAgents": [
       {{fetchAgent "sellingPrimary"     "paar" selling_member_shortid "specifics.memberNum" }},
       {{fetchAgent "sellingSecondary"   "paar" coselling_member_shortid "specifics.memberNum" }}
     ]
-
   },
-
   "offices": {
-
     "listingOffices": [
       {{fetchOffice "listingPrimary"    "paar" listing_office_shortid "officeNumber" }},
       {{fetchOffice "listingSecondary"  "paar" colisting_office_shortid "officeNumber" }}
     ],
-
     "sellingOffices": [
       {{fetchOffice "sellingPrimary"    "paar" selling_office_shortid "officeNumber" }},
       {{fetchOffice "sellingSecondary"  "paar" coselling_office_shortid "officeNumber" }}
     ]
-
   },
-
   "events": {
     "openHomes" : {{fetchOpenHomes "paar" LIST_15 LIST_1 LIST_105}},
     "tour": null
   },
-
   "_suggestPriority": {{fetchSuggestPriority LIST_15}},
-
   "_areasVersion": 3
-
 }
 ```
