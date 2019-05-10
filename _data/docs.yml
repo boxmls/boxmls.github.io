@@ -1,13 +1,13 @@
 Intro:
   - docs/index.md
   - docs/installation.md
+Sync process setup:
+  - docs/mls-configuration.md
+  - docs/mls-setup.md
+  - docs/poller.md
 Mapping Data: 
   - docs/mapping-data/properties.md
   - docs/mapping-data/agents.md
   - docs/mapping-data/offices.md
   - docs/mapping-data/openhomes.md
-  - docs/mapping-data/tours.md  
-MLS:
-  - docs/mls-configuration.md
-  - docs/mls-setup.md
-  - docs/poller.md
+  - docs/mapping-data/tours.md
