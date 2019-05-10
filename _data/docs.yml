@@ -2,7 +2,7 @@ Intro:
   - docs/index.md
   - docs/installation.md
 Mapping Data: 
-  - /docs/mapping-data/properties.md
+  - docs/mapping-data/properties.md
 MLS:
   - docs/mls-configuration.md
   - docs/mls-setup.md
