@@ -15,7 +15,7 @@ MLS Configuration includes:
 MLS configuration is stored in [YAML](https://en.wikipedia.org/wiki/YAML) file. It contains all necessary MLS details, options and credentials, which are being used by major of micro-services of BoxMLS application.
 
 It includes the following conditional sections:
-* Poller. Stores some specific options for [Poller Service](https://github.com/boxmls/service-poller)
+* Poller. Stores some specific options for [Poller Service](https://boxmls.github.io/docs/poller)
 * RETS connector configuration. It includes RETS credentials used by [RETS API service](https://github.com/boxmls/service-rets-api) for doing requests to [RETS](https://en.wikipedia.org/wiki/Real_Estate_Transaction_Standard) Provider. Also it describes the rules for resources, which are mostly needed for syncing the data by poller.
 
 All available configuration options can be found in `config.yaml` [example](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/config.yaml).
