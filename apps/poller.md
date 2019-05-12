@@ -1,7 +1,7 @@
 ---
-title: Poller
-sidebar_title: Poller
-permalink: /apps/poller
+title: Service Poller
+sidebar_title: Service Poller
+permalink: /apps/service-poller
 ---
 
 * Setup Elasticsearch mapping using the instructions in [boxmls/elasticsearch-mapping](https://github.com/boxmls/elasticsearch-mapping).
