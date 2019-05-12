@@ -2,7 +2,7 @@
   "name": "BoxMLS",
   "version": "1.0.0",
   "description": " +description: ",
-  "author": "BoxMLS <boxmls@udx.io> (https://boxmls.github.io)",
+  "author": "BoxMLS <hello@boxmls.com> (https://boxmls.github.io)",
   "license": "ISC",
   "repository": "https://github.com/boxmls/boxmls.github.io",
   "scripts": {
