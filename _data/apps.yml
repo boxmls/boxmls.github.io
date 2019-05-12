@@ -1,8 +1,0 @@
-Compute:
-  - apps/index.md
-  - apps/poller.md
-  - apps/rets-api.md
-  - apps/mls-api.md
-Data:
-  - apps/elasticsearch.md
-  - apps/rabbitmq.md
