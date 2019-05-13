@@ -21,6 +21,8 @@ sass:
 defaults:
   - scope:
       path: "docs"
+  - scope:
+      path: "apps"
     values:
       layout: docs
   - scope:
