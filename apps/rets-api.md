@@ -1,7 +1,7 @@
 ---
 title: Service RETS API
 sidebar_title: Service RETS API
-permalink: /apps/rets-api
+permalink: /docs/apps/rets-api
 ---
 
 * PHP proxy server for interacting with a RETS server to download real estate listings and related data made available from an MLS system. 

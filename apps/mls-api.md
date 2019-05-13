@@ -1,7 +1,7 @@
 ---
 title: Service MLS API
 sidebar_title: Service MLS API
-permalink: /apps/mls-api
+permalink: /docs/apps/mls-api
 ---
 
 * The service which manages all MLS configurations.

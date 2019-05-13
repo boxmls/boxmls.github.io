@@ -1,7 +1,7 @@
 ---
 title: GeoJSON MLS Areas Setup
 sidebar_title: GeoJSON MLS Areas
-permalink: /apps/geojson-mls-areas
+permalink: /docs/apps/geojson-mls-areas
 ---
 
 Standartize GeoJSON areas to be used with BoxMLS listings (properties).

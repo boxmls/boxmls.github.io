@@ -5,6 +5,13 @@ Sync process setup:
   - docs/mls-configuration.md
   - docs/mls-setup.md
   - docs/poller.md
+Platforms:
+  - apps/elasticsearch.md
+  - apps/geojson-mls-areas.md
+  - apps/rabbitmq.md
+  - apps/rets-api.md
+  - apps/mls-api.md
+  - apps/poller.md
 Data mapping:
   - docs/mapping-data/properties.md
   - docs/mapping-data/agents.md

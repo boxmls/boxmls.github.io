@@ -1,7 +1,7 @@
 ---
 title: RabbitMQ Setup
 sidebar_title: RabbitMQ
-permalink: /apps/rabbitmq
+permalink: /docs/apps/rabbitmq
 ---
 
 ## OpenSource codebase

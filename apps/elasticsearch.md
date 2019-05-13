@@ -1,7 +1,7 @@
 ---
 title: Elasticsearch Setup
 sidebar_title: Elasticsearch
-permalink: /apps/elasticsearch
+permalink: /docs/apps/elasticsearch
 ---
 
 Elasticsearch Mapping for open BoxMLS environment
