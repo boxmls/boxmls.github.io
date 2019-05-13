@@ -4,8 +4,6 @@ sidebar_title: GeoJSON MLS Areas
 permalink: /apps/geojson-mls-areas
 ---
 
-# GeoJSON MLS Areas
-
 Standartize GeoJSON areas to be used with BoxMLS listings (properties).
 
 ## OpenSource codebase

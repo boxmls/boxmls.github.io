@@ -4,8 +4,6 @@ sidebar_title: RabbitMQ
 permalink: /apps/rabbitmq
 ---
 
-# RabbitMQ
-
 ## OpenSource codebase
 
 Please visit [github repository](https://github.com/boxmls/docker-rabbitmq). There you will able to check out codebase, contribute development process 
