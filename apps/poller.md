@@ -1,7 +1,7 @@
 ---
 title: Service Poller
 sidebar_title: Service Poller
-permalink: /apps/service-poller
+permalink: /apps/poller
 ---
 
 A Docker service for intelligently polling an MLS for changes and emitting updates.
