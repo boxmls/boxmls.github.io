@@ -6,6 +6,11 @@ permalink: /apps/service-poller
 
 A Docker service for intelligently polling an MLS for changes and emitting updates.
 
+## OpenSource codebase
+
+Please visit [github repository](https://github.com/boxmls/service-poller). There you will able to check out codebase, contribute development process 
+or make a fork to have your own development workflow.
+
 ## Features
 * Responsible for mapping RETS data to JSON RESO standards
 * Sync RETS data almost in real time ( e.g.: properties may be synced every 10 seconds, - depends on [MLS configuration](https://github.com/boxmls/service-mls-api) ).

@@ -8,6 +8,11 @@ permalink: /apps/mls-api
 * All MLS configurations are stored in `yaml` format in `static/mls` directory.
 * On every update of MLS configuration, the data must be re-indexed. To (re)index Elasticsearch data, run `grunt index`.
 
+## OpenSource codebase
+
+Please visit [github repository](https://github.com/boxmls/service-mls-api). There you will able to check out codebase, contribute development process 
+or make a fork to have your own development workflow.
+
 ## Docker Start 
 
 To run in development mode we need to change the name and volume-mount our repository for SSH deployment to work:
