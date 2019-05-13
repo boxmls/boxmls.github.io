@@ -1,7 +1,7 @@
 ---
 title: MLS Configuration
 sidebar_title: MLS Configuration
-permalink: /docs/mls_configuration
+permalink: /docs/apps/mls-api/mls_configuration
 ---
 
 All existing [MLS](https://en.wikipedia.org/wiki/Multiple_listing_service) configurations are stored in [service-mls-api](https://github.com/boxmls/service-mls-api/tree/master/static/config).
