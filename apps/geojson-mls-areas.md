@@ -3,11 +3,15 @@ title: GeoJSON MLS Areas Setup
 sidebar_title: GeoJSON MLS Areas
 permalink: /apps/geojson-mls-areas
 ---
-![image](https://user-images.githubusercontent.com/308489/57512890-9acacc00-7315-11e9-854f-ad77da4d2742.png)
 
 # GeoJSON MLS Areas
 
 Standartize GeoJSON areas to be used with BoxMLS listings (properties).
+
+## OpenSource codebase
+
+Please visit [github repository](https://github.com/boxmls/geojson-mls-areas). There you will able to check out codebase, contribute development process 
+or make a fork to have your own development workflow.     
 
 ## Areas Setup
 
@@ -116,4 +120,3 @@ Example
 # Support
 
 Do you have any questions. Please, visit [Support](https://boxmls.github.io/support) page for consulting and help.
-content.com/308489/57467645-93f77700-728b-11e9-875d-0fdb96215262.png)
