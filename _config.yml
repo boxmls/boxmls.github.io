@@ -21,10 +21,12 @@ sass:
 defaults:
   - scope:
       path: "docs"
+    values:
+      layout: docs
   - scope:
       path: "apps"
     values:
-      layout: docs
+      layout: apps
   - scope:
       path: "support"
     values:
