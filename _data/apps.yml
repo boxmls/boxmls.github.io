@@ -1,4 +1,4 @@
-Platform:
+Platforms:
   - apps/index.md
   - apps/elasticsearch.md
   - apps/geojson-mls-areas.md
