@@ -8,6 +8,9 @@ Platforms:
   - docs/apps/rets-api.md
   - docs/apps/mls-api.md
   - docs/apps/poller.md
+MLS configuration setup:
+  - docs/apps/mls-api/mls-configuration.md
+  - docs/apps/mls-api/mls-setup.md
 Data mapping:
   - docs/mapping-data/properties.md
   - docs/mapping-data/agents.md
