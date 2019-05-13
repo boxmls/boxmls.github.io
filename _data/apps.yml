@@ -1,0 +1,19 @@
+Intro:
+  - docs/index.md
+  - docs/installation.md
+Sync process setup:
+  - docs/mls-configuration.md
+  - docs/mls-setup.md
+  - docs/poller.md
+Data mapping:
+  - docs/mapping-data/properties.md
+  - docs/mapping-data/agents.md
+  - docs/mapping-data/offices.md
+  - docs/mapping-data/openhomes.md
+  - docs/mapping-data/tours.md
+Platform:
+  - apps/poller.md
+  - apps/rets-api.md
+  - apps/mls-api.md
+  - apps/elasticsearch.md
+  - apps/rabbitmq.md
