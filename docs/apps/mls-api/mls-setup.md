@@ -47,8 +47,8 @@ If issues with indexing geojson data occurred:
 
 ## Setup Handlebars views and normalize Raw RETS Data
 
-* [Agent handlebar](https://boxmls.github.io/docs/mapping-data/agent) mapping
-* [Office handlebar](https://boxmls.github.io/docs/mapping-data/office) mapping
-* [Openhome handlebar](https://boxmls.github.io/docs/mapping-data/openhome) mapping (depending on market)
-* [Tour handlebar](https://boxmls.github.io/docs/mapping-data/tour) mapping (depending on market)
-* [Property handlebar](https://boxmls.github.io/docs/mapping-data/property) mapping ( note, list must be normalized last, when all other resources above are done ).
+* Agent handlebar mapping
+* Office handlebar mapping
+* Openhome handlebar mapping (depending on market)
+* Tour handlebar mapping (depending on market)
+* Property handlebar mapping ( note, list must be normalized last, when all other resources above are done ).
