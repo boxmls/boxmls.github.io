@@ -24,10 +24,6 @@ defaults:
     values:
       layout: docs
   - scope:
-      path: "apps"
-    values:
-      layout: apps
-  - scope:
       path: "support"
     values:
       layout: support
