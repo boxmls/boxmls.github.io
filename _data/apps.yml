@@ -1,7 +1,8 @@
 Platform:
   - apps/index.md
+  - apps/elasticsearch.md
+  - apps/geojson-mls-areas.md
   - apps/poller.md
   - apps/rets-api.md
   - apps/mls-api.md
-  - apps/elasticsearch.md
   - apps/rabbitmq.md
