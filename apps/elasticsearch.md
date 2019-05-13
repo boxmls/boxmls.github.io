@@ -25,6 +25,6 @@ Clone the repository and run the following command from your local environment:
 ES_ADDRESS={ELASTICSEARCH_HOST} bash bin/install.sh
 ```
 
-# Support
+## Support
 
 Do you have any questions. Please, visit [Support](https://boxmls.github.io/support) page for consulting and help.

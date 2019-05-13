@@ -115,6 +115,6 @@ Example
 }
 ```
 
-# Support
+## Support
 
 Do you have any questions. Please, visit [Support](https://boxmls.github.io/support) page for consulting and help.
