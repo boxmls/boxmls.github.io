@@ -4,5 +4,5 @@ Platform:
   - apps/geojson-mls-areas.md
   - apps/rabbitmq.md
   - apps/rets-api.md
-  - apps/poller.md
   - apps/mls-api.md
+  - apps/poller.md
