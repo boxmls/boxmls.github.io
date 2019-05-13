@@ -41,7 +41,7 @@ bin/build.sh; docker rm -fv mls-api.$(git rev-parse --symbolic-full-name --abbre
 * Make a fork of the current repository into your user/organization
 * Update config data with needed values [package.json](https://github.com/boxmls/service-mls-api/blob/master/package.json#L14-L17)
 * Follow out [MLS Configuration](https://boxmls.github.io/docs/apps/mls-api/mls-configuration) to configure service-mls-api
-* Follow out [MLS Setup](https://boxmls.github.io/docs/apps/mls-api/mls-configuration) to configure mls clients config 
+* Follow out [MLS Setup](https://boxmls.github.io/docs/apps/mls-api/mls-setup) to configure mls clients config 
 
 ## Support
 
