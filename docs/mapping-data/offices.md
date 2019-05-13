@@ -1,9 +1,9 @@
 ---
-title: Offices
-sidebar_title: Offices
-permalink: /docs/mapping-data/offices
+title: Office
+sidebar_title: Office
+permalink: /docs/mapping-data/office
 ---
-Offices data mapping
+Office data mapping
 ```
 {
   "_modified": {{#date}}{{TIMESTAMP}}{{/date}},

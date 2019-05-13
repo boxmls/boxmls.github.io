@@ -1,18 +1,18 @@
 ---
-title: Properties
-sidebar_title: Properties
-permalink: /docs/mapping-data/properties
+title: Property
+sidebar_title: Property
+permalink: /docs/mapping-data/property
 ---
-Properties data mapping
+Property data mapping
 ```
 {{!
-  ## PAAR Master
+  ## Example Master
   ##
 }}
 {
-  "_pid": "paar-{{LIST_105}}",
+  "_pid": "example-{{LIST_105}}",
   "_modified": {{#date}}{{LIST_87}}{{/date}},
-  "_guid": "/property/paar-{{LIST_105}}",
+  "_guid": "/property/example-{{LIST_105}}",
   "primary": {
       "mpoPropType": "{{#formatType}}{{LIST_9}}{{/formatType}}",
       "mpoPropInfo": [{{#stringToList}}{{LIST_9}}{{/stringToList}}],
@@ -212,7 +212,7 @@ Properties data mapping
       "school": "need augmented data"
   },
   "mls": {
-      "name": "paar",
+      "name": "example",
       "mlsId": "{{LIST_1}}",
       "association": "",
       "availableDate": null,
@@ -368,26 +368,26 @@ Properties data mapping
   "images": {{fetchImages "property" false "images"}},
   "agents": {
     "listingAgents": [
-      {{fetchAgent "listingPrimary"   "paar" listing_member_shortid "specifics.memberNum" }},
-      {{fetchAgent "listingSecondary"  "paar" colisting_member_shortid "specifics.memberNum" }}
+      {{fetchAgent "listingPrimary"   "example" listing_member_shortid "specifics.memberNum" }},
+      {{fetchAgent "listingSecondary"  "example" colisting_member_shortid "specifics.memberNum" }}
     ],
     "sellingAgents": [
-      {{fetchAgent "sellingPrimary"     "paar" selling_member_shortid "specifics.memberNum" }},
-      {{fetchAgent "sellingSecondary"   "paar" coselling_member_shortid "specifics.memberNum" }}
+      {{fetchAgent "sellingPrimary"     "example" selling_member_shortid "specifics.memberNum" }},
+      {{fetchAgent "sellingSecondary"   "example" coselling_member_shortid "specifics.memberNum" }}
     ]
   },
   "offices": {
     "listingOffices": [
-      {{fetchOffice "listingPrimary"    "paar" listing_office_shortid "officeNumber" }},
-      {{fetchOffice "listingSecondary"  "paar" colisting_office_shortid "officeNumber" }}
+      {{fetchOffice "listingPrimary"    "example" listing_office_shortid "officeNumber" }},
+      {{fetchOffice "listingSecondary"  "example" colisting_office_shortid "officeNumber" }}
     ],
     "sellingOffices": [
-      {{fetchOffice "sellingPrimary"    "paar" selling_office_shortid "officeNumber" }},
-      {{fetchOffice "sellingSecondary"  "paar" coselling_office_shortid "officeNumber" }}
+      {{fetchOffice "sellingPrimary"    "example" selling_office_shortid "officeNumber" }},
+      {{fetchOffice "sellingSecondary"  "example" coselling_office_shortid "officeNumber" }}
     ]
   },
   "events": {
-    "openHomes" : {{fetchOpenHomes "paar" LIST_15 LIST_1 LIST_105}},
+    "openHomes" : {{fetchOpenHomes "example" LIST_15 LIST_1 LIST_105}},
     "tour": null
   },
   "_suggestPriority": {{fetchSuggestPriority LIST_15}},

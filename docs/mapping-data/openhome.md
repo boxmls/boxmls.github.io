@@ -1,9 +1,9 @@
 ---
-title: Open Homes
-sidebar_title: Open Homes
-permalink: /docs/mapping-data/openhomes
+title: Open Home
+sidebar_title: Open Home
+permalink: /docs/mapping-data/openhome
 ---
-Open Homes data mapping
+Open Home data mapping
 ```
 {
 "_listingId": "{{fetchListingID LIST1 "LIST_1"}}",

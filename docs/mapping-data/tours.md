@@ -1,9 +1,9 @@
 ---
-title: Tours
-sidebar_title: Tours
-permalink: /docs/mapping-data/tours
+title: Tour
+sidebar_title: Tour
+permalink: /docs/mapping-data/tour
 ---
-Tours data mapping
+Tour data mapping
 ```
 {
     "_listingId": "{{fetchListingID ListingRid "ListingRid"}}",

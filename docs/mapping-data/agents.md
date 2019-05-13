@@ -1,9 +1,9 @@
 ---
-title: Agents
-sidebar_title: Agents
-permalink: /docs/mapping-data/agents
+title: Agent
+sidebar_title: Agent
+permalink: /docs/mapping-data/agent
 ---
-Agents data mapping
+Agent data mapping
 ```
 {
   "_modified": {{#date}}{{TIMESTAMP}}{{/date}},
@@ -21,7 +21,7 @@ Agents data mapping
     "realtorBoard": "{{MEMBER_20}}"
   },
   "office": {
-    "id": {{#if MEMBER_1}}"paar-{{MEMBER_1}}"{{else}}null{{/if}},
+    "id": {{#if MEMBER_1}}"example-{{MEMBER_1}}"{{else}}null{{/if}},
     "number": "{{OFFICESHORT}}",
     "mlsId": "{{MEMBER_1}}",
     "name": ""
