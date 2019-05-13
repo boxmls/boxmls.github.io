@@ -11,9 +11,3 @@ Platforms:
 MLS configuration setup:
   - docs/apps/mls-api/mls-configuration.md
   - docs/apps/mls-api/mls-setup.md
-Data mapping:
-  - docs/mapping-data/agent.md
-  - docs/mapping-data/office.md
-  - docs/mapping-data/openhome.md
-  - docs/mapping-data/tour.md
-  - docs/mapping-data/property.md
