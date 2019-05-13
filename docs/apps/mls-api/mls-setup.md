@@ -1,7 +1,7 @@
 ---
 title: MLS Setup
 sidebar_title: MLS Setup
-permalink: /docs/apps/mls-api/mls_setup
+permalink: /docs/apps/mls-api/mls-setup
 ---
 
 ## MLS configuration
