@@ -1,6 +1,6 @@
-Open BoxMLS
+OpenBoxMLS
 
-### What is OpenBox?
+### What is OpenBoxMLS?
     
 * Nationwide scalable RETS aggregation engine
 * Imports MLS data in real time
