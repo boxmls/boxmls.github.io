@@ -4,7 +4,7 @@ sidebar_title: Installation
 permalink: /docs/installation
 ---
 
-OpenBox platform is a multi-services application. It should be setup step by step.    
+OpenBoxMLS is a multi-services application. It should be setup step by step.    
 Please check out further pages to get familiar with required platforms and their installation and setup instructions and find open sourced codebase.
 
 1. Setup Elasticsearch mapping using the instructions in [elasticsearch-mapping](https://boxmls.github.io/docs/apps/elasticsearch).
