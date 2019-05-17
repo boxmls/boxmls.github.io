@@ -4,7 +4,7 @@ sidebar_title: Home
 permalink: /docs/
 ---
 
-What is OpenBox?
+What is OpenBoxMLS?
 
 * Nationwide scalable RETS aggregation engine
 * Imports MLS data in real time
