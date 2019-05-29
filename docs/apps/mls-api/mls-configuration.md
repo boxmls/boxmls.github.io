@@ -4,7 +4,7 @@ sidebar_title: MLS Configuration
 permalink: /docs/apps/mls-api/mls-configuration
 ---
 
-All existing [MLS](https://en.wikipedia.org/wiki/Multiple_listing_service) configurations are stored in [service-mls-api](https://github.com/boxmls/service-mls-api/tree/master/static/config).
+All existing [MLS](https://en.wikipedia.org/wiki/Multiple_listing_service) configurations should be stored at the own private repository. [Here](https://github.com/boxmls/config-example) you can find an example of MLS configurations.
 
 MLS Configuration includes:
 * Configuration file (`config.yaml`)
@@ -18,7 +18,7 @@ It includes the following conditional sections:
 * Poller. Stores some specific options for [Poller Service](https://github.com/boxmls/service-poller)
 * RETS connector configuration. It includes RETS credentials used by [RETS API service](https://github.com/boxmls/service-rets-api) for doing requests to [RETS](https://en.wikipedia.org/wiki/Real_Estate_Transaction_Standard) Provider. Also it describes the rules for resources, which are mostly needed for syncing the data by poller.
 
-All available configuration options can be found in `config.yaml` [example](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/config.yaml).
+All available configuration options can be found in `config.yaml` [example](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/config.yaml).
 
 ## Template processors
 
@@ -30,20 +30,20 @@ BoxMLS stores all MLS data in two formats:
 
 MLS original data is being normalized to internal standartized format by MLS [Poller Service](https://github.com/boxmls/service-poller) using [handlebarsjs](http://handlebarsjs.com/) templates. Every resource has its own [handlebarsjs](http://handlebarsjs.com/) template, which describes standartized JSON object.
 
-Templates are stored in `static/config/{MLS}/handlebars/views` folder. See example [here](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/views).
+Templates are stored in `/handlebars/views` folder. See example [here](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/views).
 
 MLS can have up to five templates:
-* [agent.handlebars](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/views/agent.handlebars)
-* [office.handlebars](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/views/office.handlebars)
-* [openhome.handlebars](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/views/openhome.handlebars)
-* [property.handlebars](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/views/property.handlebars)
-* [tour.handlebars](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/views/tour.handlebars)
+* [agent.handlebars](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/views/agent.handlebars)
+* [office.handlebars](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/views/office.handlebars)
+* [openhome.handlebars](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/views/openhome.handlebars)
+* [property.handlebars](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/views/property.handlebars)
+* [tour.handlebars](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/views/tour.handlebars)
 
 ### Helpers
 
 Helpers is the set of handlebar functions used in templates. There are two types of Helpers:
 * Common. All common helper functions are defined in Poller service and can be found in [lib/helpers](https://github.com/boxmls/service-poller/tree/master/lib/helpers) directory. 
-* MLS Custom. Custom helpers are used and defined only by the specific MLS. They are defined and stored under MLS configuration on `mls-api`. See example [static/config/example/handlebars/helpers](https://github.com/boxmls/service-mls-api/tree/master/static/config/example/handlebars/helpers).
+* MLS Custom. Custom helpers are used and defined only by the specific MLS. They are defined and stored under MLS configuration on `mls-api`. See example [handlebars/helpers](https://github.com/boxmls/config-example/blob/master/mls/mock-mls/handlebars/helpers).
 
 Note: common function is being re-declared by MLS custom function with the same name. E.g.: if MLS custom `stringToList` function will be defined it will be used instead of already existing common function with the same name.  
 

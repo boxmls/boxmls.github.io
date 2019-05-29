@@ -6,7 +6,7 @@ permalink: /docs/apps/mls-api/mls-setup
 
 ## MLS configuration
 
-* Create default MLS configuration files ( `handlebars`, `config.yaml` ). The example is available [here](https://github.com/boxmls/service-mls-api/tree/master/static/config/example). 
+* Create default MLS configuration files ( `handlebars`, `config.yaml` ). The example is available [here](https://github.com/boxmls/config-example/blob/master/mls/mock-mls). 
 * Be sure that all `pm2` processes in `config.yaml` are disabled for now ( e.g. `poller.pm2.sync-property: false` ) to prevent starting `pm2` processes automatically.
 * Setup RETS credentials ( `connector.config.credentials` ) and test them using Swagger UI of RETS API service.
 * Setup RETS resources ( `connector.config.resources` ) and test them using Swagger UI of RETS API service.
