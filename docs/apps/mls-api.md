@@ -6,7 +6,7 @@ permalink: /docs/apps/mls-api
 
 * The service which manages all MLS configurations.
 * All MLS configurations should be stored in `yaml` format at the own private repository. [Here](https://github.com/boxmls/config-example) you can find an example of MLS configurations.
-* On every update of MLS configuration, the data must be re-indexed. To (re)index Elasticsearch data, run `grunt index`.
+* Indexing MLS configuration proceeds automatically on container start. On every update of MLS configuration, the data must be re-indexed, so to (re)index Elasticsearch data, restart the container.
 
 ## OpenSource codebase
 

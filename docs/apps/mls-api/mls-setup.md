@@ -15,15 +15,15 @@ permalink: /docs/apps/mls-api/mls-setup
 
 ### Notes
 
-* MLS configuration is being retrieved from Elasticsearch. To apply changes in `config.yaml`, - be sure to re-index Elasticsearch data ( `MLS={name} grunt index` ).
-* Run `grunt index` inside `service-mls-api` container to re-index MLS config(s).
+* MLS configuration is being retrieved from Elasticsearch. To apply changes in `config.yaml`, - be sure to restart the container.
 * To setup RETS resources ( `connector.config.resources` ) [RETS M.D.](https://retsmd.com/index.php) service can be used. It's rendering RETS meta schema.
 
 ### Grunt Commands
 
 All [grunt](https://gruntjs.com/getting-started) commands below belong to [service-mls-api](https://github.com/boxmls/service-mls-api/blob/master/gruntfile.js)
 
-* `grunt index`. Extends and indexes all MLS configurations ( they are stored in Elasticsearch )
+* `grunt index`. Indexes all MLS configurations ( they are stored in Elasticsearch )
+* `grunt extend-data`. Extends MLS configurations ( they are stored in Elasticsearch ) with additional data
 * `grunt get-field-schema`. Retrieves and indexes all RETS meta fields and their schemas. It's required for [Poller](https://github.com/boxmls/service-poller) sync and data normalization processes.
 
 ## Sync RETS RAW Data from MLS to ElasticSearch
